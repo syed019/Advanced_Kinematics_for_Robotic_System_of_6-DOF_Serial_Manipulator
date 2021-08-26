@@ -1,0 +1,77 @@
+function my_plot2(time,q_dot,v_dot)
+
+%% Q-dot
+figure (15)
+subplot(3,2,1)
+plot(time(1,2:209),q_dot(1,2:209),'-k')
+title('Joint Rate 1')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+subplot(3,2,2)
+plot(time(2,2:209),q_dot(2,2:209),'-m')
+title('Joint Rate 2')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+subplot(3,2,3)
+plot(time(3,2:209),q_dot(3,2:209),'-c')
+title('Joint Rate 3')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+subplot(3,2,4)
+plot(time(4,2:209),q_dot(4,2:209),'-r')
+title('Joint Rate 4')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+subplot(3,2,5)
+plot(time(5,2:209),q_dot(5,2:209),'-g')
+title('Joint Rate 5')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+subplot(3,2,6)
+plot(time(6,2:209),q_dot(6,2:209),'-b')
+title('Joint Rate 6')
+xlabel ('time (s)')
+ylabel ('q-dot')
+
+%% V-dot
+figure (16)
+subplot(3,2,1)
+plot(time(1,:),v_dot(1,:),'-k')
+title('Velocity 1')
+xlabel ('time (s)')
+ylabel ('v-dot')
+
+subplot(3,2,2)
+plot(time(2,:),v_dot(2,:),'-m')
+title('Velocity 2')
+xlabel ('time (s)')
+ylabel ('v-dot')
+
+subplot(3,2,3)
+plot(time(3,:),v_dot(3,:),'-c')
+title('Velocity 3')
+xlabel ('time (s)')
+ylabel ('v-dot')
+
+subplot(3,2,4)
+plot(time(4,:),v_dot(4,:),'-r')
+title('Velocity 4')
+xlabel ('time (s)')
+ylabel ('v-dot')
+
+subplot(3,2,5)
+plot(time(5,:),v_dot(5,:),'-g')
+title('Velocity 5')
+xlabel ('time (s)')
+ylabel ('v-dot')
+
+subplot(3,2,6)
+plot(time(6,:),v_dot(6,:),'-b')
+title('Velocity 6')
+xlabel ('time (s)')
+ylabel ('v-dot')
